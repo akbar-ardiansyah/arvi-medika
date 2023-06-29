@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+body {
+    background: #F6F8FD;
+    color: #043F2B;
+    font-family: 'Poppins', sans-serif;
+}
+
+#hero {
+    height: 70vh;
+    /* background: linear-gradient(90deg, #98EECC, #CBFEEA);
+    background-image: url('assets/hero-bg.svg'); */
+    background: url("assets/hero-bg.svg") center/contain no-repeat, linear-gradient(90deg,
+            #98EECC,
+            #CBFEEA);
+    background-position: left;
+    background-size: auto;
+}
+
+.h-70-vh {
+    height: 70vh;
+}
+
+.form-control {
+    height: 70px;
+}
+
+.input-groups {
+    position: relative;
+}
+
+#send-button {
+    background-color: #CBFEEA;
+    padding: 0 50px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: none;
+    outline: none;
+    z-index: 2;
+}
+
+.leading-text {
+    color: #5A8A52;
+    font-weight: 800;
+}
