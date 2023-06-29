@@ -6,15 +6,34 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.nav-item .nav-link {
+    color: #043F2B;
+    margin: 0 40px;
+}
+
+.nav-item .nav-link.active {
+    color: #5A8A52;
+    font-weight: 800;
+}
+
+.bg-blur {
+    backdrop-filter: blur(10px);
+    background-color: #f6f8fd2d;
+}
+
 #hero {
     height: 70vh;
     /* background: linear-gradient(90deg, #98EECC, #CBFEEA);
     background-image: url('assets/hero-bg.svg'); */
-    background: url("assets/hero-bg.svg") center/contain no-repeat, linear-gradient(90deg,
+    background: url("./assets/hero-bg.svg") center/contain no-repeat, linear-gradient(90deg,
             #98EECC,
             #CBFEEA);
     background-position: left;
     background-size: auto;
+}
+
+.card {
+    color: #043F2B;
 }
 
 .h-70-vh {
@@ -27,16 +46,19 @@ body {
 
 .input-groups {
     position: relative;
+    width: 80%;
 }
 
+
 #send-button {
+    color: #043F2B;
     background-color: #CBFEEA;
     padding: 0 50px;
-    height: 60px;
+    height: 50px;
     position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
     border: none;
     outline: none;
     z-index: 2;
@@ -45,4 +67,9 @@ body {
 .leading-text {
     color: #5A8A52;
     font-weight: 800;
+}
+
+
+.layanan img {
+    border-radius: 40px;
 }
