@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <title>Document</title>
+    <title>ARVI MEDICAL CENTER Praktek Dokter Umum 24 Jam</title>
 </head>
 
 <body>
@@ -54,8 +55,9 @@
                 </div>
                 <div class="col-sm-12 col-lg-6">
                     <div class="position-relative">
-                        <div class="card border-0 rounded-4 shadow-sm" style="width: 40%;">
-                            <div class="p-3">
+                        <div class="card border-0 rounded-4 shadow-sm animate__animated animate__flipInY"
+                            style="width: 40%;">
+                            <div class="p-3" style="font-size: 14px;">
                                 Tim medis kami terdiri dari dokter dan tenaga medis yang berpengalaman dan berkualitas.
                                 Mereka
                                 siap memberikan perawatan
@@ -74,7 +76,8 @@
                                     </div>
                                 </div>
                             </div> -->
-                            <div class="position-absolute top-50 start-100 translate-middle" style="z-index: -1;">
+                            <div class="position-absolute top-50 start-100 translate-middle animate__animated animate__zoomInDown"
+                                style="z-index: -1;">
                                 <svg width="157" height="85" viewBox="0 0 157 85" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -124,7 +127,7 @@
                                         fill="#98EECC" />
                                 </svg>
                             </div>
-                            <img src="./assets/hero-img.png" class="img-fluid">
+                            <img src="./assets/hero-img.png" class="img-fluid animate__animated animate__fadeInUp">
                         </div>
                     </div>
                 </div>
@@ -133,28 +136,79 @@
     </section>
 
 
-    <div style="height: 40vh; background: #676666; margin: 100px;"></div>
+    <div style="height: 40vh; background: #c9c0c0; margin: 100px;"></div>
 
     <div class="layanan">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-lg-6">
-                    <img src="assets/service.png" class="img-fluid">
+                    <div class="position-relative">
+                        <div class="p-5">
+                            <img src="assets/service.png" class="img-fluid">
+                        </div>
+                        <div class="position-absolute top-0 start-0">
+                            <div class="card border-0 rounded-4 shadow-sm">
+                                <div class="p-3">
+                                    <img src="./assets/favicon/logo.svg" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-absolute bottom-0 end-0">
+                            <div class="card border-0 rounded-4 shadow-sm" style="width: 40%;">
+                                <div class="p-3" style="font-size: 14px;">
+                                    <div class="h6 leading-text">admision</div>
+                                    Kami siap melayani kebutuhan medis darurat Anda selama 24 jam sehari, 7 hari
+                                    seminggu. Ketika Anda membutuhkan bantuan
+                                    segera, kami akan memberikan perawatan dengan cepat dan tepat.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-sm-12 col-lg-6">
-                    <div class="h1 leading-text">
+                    <div class="h1 leading-text pt-5">
                         ARVI MEDICAL CENTER
                     </div>
                     <div class="h5 fw-semibold">
                         Pelayanan Medis Terbaik 24 Jam, Kami Siap Melayani Kesehatan Anda Kapanpun dan Dimanapun
                     </div>
+                    <span>
+                        <div class="dot_checker"></div>
+                        &nbsp;&nbsp;Pelayanan Medis Komprehensif
+                    </span>
+                    <span>
+                        <div class="dot_checker"></div>
+                        &nbsp;&nbsp;Dokter dan Tenaga Medis Profesional
+                    </span>
+                    <span>
+                        <div class="dot_checker"></div>
+                        &nbsp;&nbsp;Teknologi Medis Terkini
+                    </span>
+                    <span>
+                        <div class="dot_checker"></div>
+                        &nbsp;&nbsp;Layanan Darurat 24 Jam
+                    </span>
+                    <span>
+                        <div class="dot_checker"></div>
+                        &nbsp;&nbsp;Fasilitas yang Nyaman dan Bersih
+                    </span>
+                    <span>
+                        <div class="dot_checker"></div>
+                        &nbsp;&nbsp;Pelayanan Konsultasi dan Edukasi
+                    </span>
+                    <span>
+                        <div class="dot_checker"></div>
+                        &nbsp;&nbsp;Dukungan dan Perhatian Pasca Perawatan
+                    </span>
                 </div>
             </div>
         </div>
     </div>
+    <div id="hero" class="mt-5"></div>
 
     <!-- SCRIPT -->
-    <script src="./bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="./bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         var body = document.body;
         var elements = document.getElementsByClassName("navbar");
