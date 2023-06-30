@@ -50,8 +50,8 @@
                         Kami Menyediakan Pelayanan Medis Terbaik, Membangun Kesehatan Anda dengan Cinta dan Perhatian
                     </p>
                     <div class="input-groups animate__animated animate__backInUp">
-                        <input type="text" class="form-control shadow-sm rounded-pill"
-                            placeholder="Recipient's username">
+                        <input type="text" id="messages" class="form-control shadow-sm rounded-pill"
+                            placeholder="Beri tahu kami apa yang bisa kami bantu">
                         <button class="input-group-text rounded-pill shadow-sm" id="send-button">KIRIM</button>
                     </div>
                 </div>
@@ -158,7 +158,7 @@
                 <div class="col-sm-12 col-lg-6">
                     <div class="position-relative">
                         <div class="p-5">
-                            <img src="assets/service.png" class="img-fluid">
+                            <img src="assets/service.png" class="img-fluid img-thumb">
                         </div>
                         <div class="position-absolute top-0 start-0">
                             <img src="./assets/favicon/logo.svg" width="300" class="img-fluid">
@@ -439,11 +439,14 @@
         });
 
 
-        function handleClick() {
-            alert('oke bang');
+        function sendMesage() {
+            let msg = document.getElementById("messages");
+            let val = msg.value;
+            window.location.href = 'https://wa.me/62895327074207?text=' + val;
         }
+
         let button = document.getElementById('send-button');
-        button.onclick = handleClick;
+        button.onclick = sendMesage;
     </script>
 </body>
 
