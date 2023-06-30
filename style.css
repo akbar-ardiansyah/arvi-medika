@@ -2,17 +2,17 @@
 
 body {
     background: #F6F8FD;
-    color: #043F2B;
+    color: #321E1E;
     font-family: 'Poppins', sans-serif;
 }
 
 .nav-item .nav-link {
-    color: #043F2B;
+    color: #321E1E;
     margin: 0 40px;
 }
 
 .nav-item .nav-link.active {
-    color: #5A8A52;
+    color: #FF6666;
     font-weight: 800;
 }
 
@@ -23,11 +23,11 @@ body {
 
 #hero {
     height: 70vh;
-    /* background: linear-gradient(90deg, #98EECC, #CBFEEA);
+    /* background: linear-gradient(90deg, #F99A9A, #FCAEAE);
     background-image: url('assets/hero-bg.svg'); */
     background: url("./assets/hero-bg.svg") center/contain no-repeat, linear-gradient(90deg,
-            #98EECC,
-            #CBFEEA);
+            #F99A9A,
+            #FCAEAE);
     background-position: left;
     background-size: auto;
 }
@@ -35,8 +35,8 @@ body {
 #footer {
     min-height: 30vh;
     background: url("./assets/hero-bg.svg") center/contain no-repeat, linear-gradient(90deg,
-            #98EECC,
-            #CBFEEA);
+            #F99A9A,
+            #FCAEAE);
     background-position: left;
     background-size: contain;
 }
@@ -48,7 +48,7 @@ iframe {
 }
 
 .card {
-    color: #043F2B;
+    color: #321E1E;
 }
 
 .h-70-vh {
@@ -66,8 +66,8 @@ iframe {
 
 
 #send-button {
-    color: #043F2B;
-    background-color: #CBFEEA;
+    color: #321E1E;
+    background-color: #FCAEAE;
     padding: 0 50px;
     height: 50px;
     position: absolute;
@@ -80,7 +80,7 @@ iframe {
 }
 
 .leading-text {
-    color: #5A8A52;
+    color: #FF6666;
     font-weight: 800;
 }
 
@@ -108,7 +108,7 @@ iframe {
 }
 
 .layanan span {
-    color: #043F2B;
+    color: #321E1E;
     display: flex;
     margin: 14px;
 }
@@ -143,17 +143,17 @@ iframe {
 
 /* Track background */
 ::-webkit-scrollbar-track {
-    background: #98EECC;
+    background: #F99A9A;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #5A8A52;
+    background: #FF6666;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #043F2B;
+    background: #321E1E;
 }
 
 
@@ -163,8 +163,8 @@ iframe {
 #testimonial-section-v3 {
     /* background-color: #181230; */
     background: linear-gradient(90deg,
-            #98EECC,
-            #CBFEEA);
+            #F99A9A,
+            #FCAEAE);
     height: auto;
     margin: 50px 0 100px;
     overflow: hidden;
@@ -293,14 +293,14 @@ iframe {
 }
 
 #testimonial-section-v3 .testimonial-title {
-    color: #5A8A52;
+    color: #FF6666;
     font-size: 18px;
     font-weight: 700;
     line-height: 27px
 }
 
 #testimonial-section-v3 .testimonial-description {
-    color: #043F2B;
+    color: #321E1E;
     font-size: 12px;
     font-weight: normal;
     line-height: 24px;
@@ -497,7 +497,7 @@ section#roadmapCareer .roadmapCard {
 
 
 section#roadmapCareer .roadmapCard .subtitle {
-    color: #043F2B;
+    color: #321E1E;
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 16px
