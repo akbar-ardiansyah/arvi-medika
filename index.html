@@ -67,17 +67,6 @@
                             </div>
                         </div>
                         <div class="position-absolute top-100 start-50 translate-middle">
-                            <!-- <div class="position-absolute top-0 start-0 translate-middle" style="z-index: -1;">
-                                <div class="card border-0 rounded-4 shadow-sm">
-                                    <div class="p-3">
-                                        Tim medis kami terdiri dari dokter dan tenaga medis yang berpengalaman dan
-                                        berkualitas.
-                                        Mereka
-                                        siap memberikan perawatan
-                                        terbaik untuk kebutuhan kesehatan Anda
-                                    </div>
-                                </div>
-                            </div> -->
                             <div class="position-absolute top-50 start-100 translate-middle animate__animated animate__zoomInDown"
                                 style="z-index: -1;">
                                 <svg width="157" height="85" viewBox="0 0 157 85" fill="none"
@@ -138,10 +127,27 @@
     </section>
 
     <div class="container mt-5 mb-5">
-        <div style="height: 40vh; padding-top: 10%; background: #c9c0c0;">
-            <div class="text-center">
-                konten sedang dipersiapkan
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/carousel-1.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/carousel-1.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/carousel-1.jpg" class="d-block w-100">
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -160,7 +166,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="position-absolute bottom-0 end-0">
+                        <div class="position-absolute bottom-0 end-0 visibility-none">
                             <div class="card border-0 rounded-4 shadow-sm" style="width: 40%;">
                                 <div class="p-3" style="font-size: 14px;">
                                     <div class="h6 leading-text">admision</div>
