@@ -88,3 +88,43 @@ body {
     display: flex;
     margin: 14px;
 }
+
+@media (max-width: 1080px) {
+    .visibility-none {
+        display: none;
+    }
+
+    .input-groups {
+
+        width: 100%;
+    }
+
+    #hero h1,
+    #hero p {
+        text-align: center;
+    }
+
+    .navbar-collapse.collapse.show {
+        height: 100vh;
+    }
+}
+
+/* Track */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track background */
+::-webkit-scrollbar-track {
+    background: #98EECC;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #5A8A52;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #043F2B;
+}
