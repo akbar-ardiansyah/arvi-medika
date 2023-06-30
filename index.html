@@ -66,6 +66,7 @@
                                 terbaik untuk kebutuhan kesehatan Anda
                             </div>
                         </div>
+
                         <div class="position-absolute top-100 start-50 translate-middle">
                             <div class="position-absolute top-50 start-100 translate-middle animate__animated animate__zoomInDown"
                                 style="z-index: -1;">
@@ -117,9 +118,32 @@
                                         d="M157 74.5C157 80.299 152.299 85 146.5 85C140.701 85 136 80.299 136 74.5C136 68.701 140.701 64 146.5 64C152.299 64 157 68.701 157 74.5Z"
                                         fill="#FF6666" />
                                 </svg>
-
                             </div>
                             <img src="./assets/hero-img.png" class="img-fluid animate__animated animate__fadeInUp">
+                            <div class="position-absolute top-0 start-100 translate-middle" style="z-index: 10;">
+                                <style>
+                                    @keyframes move {
+                                        0% {
+                                            transform: translateX(0);
+                                        }
+
+                                        50% {
+                                            transform: translateX(10px);
+                                        }
+
+                                        100% {
+                                            transform: translateX(0);
+                                        }
+                                    }
+
+                                    .my-btn {
+                                        animation: move 2s infinite;
+                                    }
+                                </style>
+                                <button class="input-group-text rounded-pill shadow-sm my-btn" id="visit">kunjungi
+                                    klinik
+                                    kami</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -444,9 +468,16 @@
             let val = msg.value;
             window.location.href = 'https://wa.me/62895327074207?text=' + val;
         }
+        function visitMe() {
+            window.location.href = 'https://goo.gl/maps/WLRuvNJ5GHk8F9DU6';
+        }
 
         let button = document.getElementById('send-button');
         button.onclick = sendMesage;
+
+        let visitButton = document.getElementById('visit');
+        visitButton.onclick = visitMe;
+
     </script>
 </body>
 

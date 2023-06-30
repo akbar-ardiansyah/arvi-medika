@@ -21,6 +21,13 @@ body {
     background-color: #f6f8fd9c;
 }
 
+.my-btn {
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #FF3131;
+    border-radius: 10px !important;
+}
+
 #hero {
     height: 70vh;
     background: url("./assets/hero-bg.svg") center/contain, linear-gradient(90deg,
@@ -533,4 +540,9 @@ section#roadmapCareer .roadmapCard .subtitle {
         padding-left: 16px;
         padding-right: 16px
     }
+
+    /* #hero {
+        background-size: 200px auto;
+        background-repeat: repeat;
+    } */
 }
