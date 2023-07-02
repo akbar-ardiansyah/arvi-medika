@@ -272,8 +272,8 @@ iframe {
 }
 
 #testimonial-section-v3 .testimonial-column:first-child {
-    -webkit-animation: move 15s ease-in infinite;
-    animation: move 15s ease-in infinite;
+    -webkit-animation: move-up 15s ease-in infinite !important;
+    animation: move-up 15s ease-in infinite !important;
     top: 50px
 }
 
@@ -368,7 +368,7 @@ iframe {
     line-height: 1.8
 }
 
-@keyframes move {
+@keyframes move-up {
     0% {
         top: 70px
     }
@@ -382,19 +382,6 @@ iframe {
     }
 }
 
-@-webkit-keyframes move-down {
-    0% {
-        bottom: 70px
-    }
-
-    50% {
-        bottom: -55px
-    }
-
-    to {
-        bottom: 70px
-    }
-}
 
 @keyframes move-down {
     0% {
