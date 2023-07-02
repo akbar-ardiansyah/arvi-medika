@@ -10,12 +10,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preload" href="./assets/plugin/cwa-lightbox-gallery/cwa_main.css" as="style" />
     <title>ARVI MEDICAL CENTER Praktek Dokter Umum 24 Jam</title>
 </head>
 
 <body>
     <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary"> -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar-example3">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,428 +25,476 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase active" aria-current="page" href="#">beranda</a>
+                        <a class="nav-link text-uppercase active" aria-current="page" href="#hero">beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">layanan</a>
+                        <a class="nav-link text-uppercase" href="#layanan">layanan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">kontak kami</a>
+                        <a class="nav-link text-uppercase" href="#contact">kontak kami</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase">tentang</a>
+                        <a class="nav-link text-uppercase" href="#gallery">galery</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section id="hero">
-        <div class="container">
-            <div class="row align-items-center h-70-vh">
-                <div class="col-sm-12 col-lg-6">
-                    <h1 class="leading-text animate__animated animate__bounceInLeft">
-                        ARVI MEDICAL CENTER <br>Praktek Dokter Umum 24 Jam
-                    </h1>
-                    <p class="fs-5 animate__animated animate__bounceInLeft">
-                        Kami Menyediakan Pelayanan Medis Terbaik, Membangun Kesehatan Anda dengan Cinta dan Perhatian
-                    </p>
-                    <div class="input-groups animate__animated animate__backInUp">
-                        <input type="text" id="messages" class="form-control shadow-sm rounded-pill"
-                            placeholder="Beri tahu kami apa yang bisa kami bantu">
-                        <button class="input-group-text rounded-pill shadow-sm" id="send-button">KIRIM</button>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-6 visibility-none">
-                    <div class="position-relative">
-                        <div class="card border-0 rounded-4 shadow-sm animate__animated animate__flipInY"
-                            style="width: 40%;">
-                            <div class="p-3" style="font-size: 14px;">
-                                Tim medis kami terdiri dari dokter dan tenaga medis yang berpengalaman dan berkualitas.
-                                Mereka
-                                siap memberikan perawatan
-                                terbaik untuk kebutuhan kesehatan Anda
-                            </div>
-                        </div>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0">
 
-                        <div class="position-absolute top-100 start-50 translate-middle">
-                            <div class="position-absolute top-50 start-100 translate-middle animate__animated animate__zoomInDown"
-                                style="z-index: -1;">
-                                <svg width="157" height="85" viewBox="0 0 157 85" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M21 10.5C21 16.299 16.299 21 10.5 21C4.70101 21 0 16.299 0 10.5C0 4.70101 4.70101 0 10.5 0C16.299 0 21 4.70101 21 10.5Z"
-                                        fill="#FF6666" />
-                                    <path
-                                        d="M21 42.5C21 48.299 16.299 53 10.5 53C4.70101 53 0 48.299 0 42.5C0 36.701 4.70101 32 10.5 32C16.299 32 21 36.701 21 42.5Z"
-                                        fill="#FF6666" />
-                                    <path
-                                        d="M21 74.5C21 80.299 16.299 85 10.5 85C4.70101 85 0 80.299 0 74.5C0 68.701 4.70101 64 10.5 64C16.299 64 21 68.701 21 74.5Z"
-                                        fill="#FF6666" />
-                                    <path
-                                        d="M55 10.5C55 16.299 50.299 21 44.5 21C38.701 21 34 16.299 34 10.5C34 4.70101 38.701 0 44.5 0C50.299 0 55 4.70101 55 10.5Z"
-                                        fill="#FF6666" />
-                                    <path
-                                        d="M55 42.5C55 48.299 50.299 53 44.5 53C38.701 53 34 48.299 34 42.5C34 36.701 38.701 32 44.5 32C50.299 32 55 36.701 55 42.5Z"
-                                        fill="#FF6666" />
-                                    <path
-                                        d="M55 74.5C55 80.299 50.299 85 44.5 85C38.701 85 34 80.299 34 74.5C34 68.701 38.701 64 44.5 64C50.299 64 55 68.701 55 74.5Z"
-                                        fill="#FF6666" />
-                                    <path
-                                        d="M89 10.5C89 16.299 84.299 21 78.5 21C72.701 21 68 16.299 68 10.5C68 4.70101 72.701 0 78.5 0C84.299 0 89 4.70101 89 10.5Z"
-                                        fill="#FF6666" />
-                                    <path
-                                        d="M89 42.5C89 48.299 84.299 53 78.5 53C72.701 53 68 48.299 68 42.5C68 36.701 72.701 32 78.5 32C84.299 32 89 36.701 89 42.5Z"
-                                        fill="#FF6666" />
-                                    <path
-                                        d="M89 74.5C89 80.299 84.299 85 78.5 85C72.701 85 68 80.299 68 74.5C68 68.701 72.701 64 78.5 64C84.299 64 89 68.701 89 74.5Z"
-                                        fill="#FF6666" />
-                                    <path
-                                        d="M123 10.5C123 16.299 118.299 21 112.5 21C106.701 21 102 16.299 102 10.5C102 4.70101 106.701 0 112.5 0C118.299 0 123 4.70101 123 10.5Z"
-                                        fill="#FF6666" />
-                                    <path
-                                        d="M123 42.5C123 48.299 118.299 53 112.5 53C106.701 53 102 48.299 102 42.5C102 36.701 106.701 32 112.5 32C118.299 32 123 36.701 123 42.5Z"
-                                        fill="#FF6666" />
-                                    <path
-                                        d="M123 74.5C123 80.299 118.299 85 112.5 85C106.701 85 102 80.299 102 74.5C102 68.701 106.701 64 112.5 64C118.299 64 123 68.701 123 74.5Z"
-                                        fill="#FF6666" />
-                                    <path
-                                        d="M157 10.5C157 16.299 152.299 21 146.5 21C140.701 21 136 16.299 136 10.5C136 4.70101 140.701 0 146.5 0C152.299 0 157 4.70101 157 10.5Z"
-                                        fill="#FF6666" />
-                                    <path
-                                        d="M157 42.5C157 48.299 152.299 53 146.5 53C140.701 53 136 48.299 136 42.5C136 36.701 140.701 32 146.5 32C152.299 32 157 36.701 157 42.5Z"
-                                        fill="#FF6666" />
-                                    <path
-                                        d="M157 74.5C157 80.299 152.299 85 146.5 85C140.701 85 136 80.299 136 74.5C136 68.701 140.701 64 146.5 64C152.299 64 157 68.701 157 74.5Z"
-                                        fill="#FF6666" />
-                                </svg>
-                            </div>
-                            <img src="./assets/hero-img.png" class="img-fluid animate__animated animate__fadeInUp">
-                            <div class="position-absolute top-0 start-100 translate-middle" style="z-index: 10;">
-                                <style>
-                                    @keyframes move {
-                                        0% {
-                                            transform: translateX(0);
-                                        }
 
-                                        50% {
-                                            transform: translateX(10px);
-                                        }
-
-                                        100% {
-                                            transform: translateX(0);
-                                        }
-                                    }
-
-                                    .my-btn {
-                                        animation: move 2s infinite;
-                                    }
-                                </style>
-                                <button class="input-group-text rounded-pill shadow-sm my-btn" id="visit">kunjungi
-                                    klinik
-                                    kami</button>
-                            </div>
+        <section id="hero">
+            <div class="container">
+                <div class="row align-items-center h-70-vh">
+                    <div class="col-sm-12 col-lg-6">
+                        <h1 class="leading-text animate__animated animate__bounceInLeft">
+                            ARVI MEDICAL CENTER <br>Praktek Dokter Umum 24 Jam
+                        </h1>
+                        <p class="fs-5 animate__animated animate__bounceInLeft">
+                            Kami Menyediakan Pelayanan Medis Terbaik, Membangun Kesehatan Anda dengan Cinta dan
+                            Perhatian
+                        </p>
+                        <div class="input-groups animate__animated animate__backInUp">
+                            <input type="text" id="messages" class="form-control shadow-sm rounded-pill"
+                                placeholder="Beri tahu kami apa yang bisa kami bantu">
+                            <button class="input-group-text rounded-pill shadow-sm" id="send-button">KIRIM</button>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="container mt-5 mb-5">
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./assets/carousel-1.jpg" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/carousel-1.jpg" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/carousel-1.jpg" class="d-block w-100">
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="layanan">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-lg-6">
-                    <div class="position-relative">
-                        <div class="p-5">
-                            <img src="assets/home.jpg" class="img-fluid img-thumb">
-                        </div>
-                        <div class="position-absolute top-0 start-0">
-                            <img src="./assets/favicon/logo.svg" width="300" class="img-fluid">
-                        </div>
-                        <div class="position-absolute bottom-0 end-0 visibility-none">
-                            <div class="card border-0 rounded-4 shadow-sm" style="width: 40%;">
+                    <div class="col-sm-12 col-lg-6 visibility-none">
+                        <div class="position-relative">
+                            <div class="card border-0 rounded-4 shadow-sm animate__animated animate__flipInY"
+                                style="width: 40%;">
                                 <div class="p-3" style="font-size: 14px;">
-                                    <div class="h6 leading-text">admision</div>
-                                    Kami siap melayani kebutuhan medis darurat Anda selama 24 jam sehari, 7 hari
-                                    seminggu. Ketika Anda membutuhkan bantuan
-                                    segera, kami akan memberikan perawatan dengan cepat dan tepat.
+                                    Tim medis kami terdiri dari dokter dan tenaga medis yang berpengalaman dan
+                                    berkualitas.
+                                    Mereka
+                                    siap memberikan perawatan
+                                    terbaik untuk kebutuhan kesehatan Anda
+                                </div>
+                            </div>
+
+                            <div class="position-absolute top-100 start-50 translate-middle">
+                                <div class="position-absolute top-50 start-100 translate-middle animate__animated animate__zoomInDown"
+                                    style="z-index: -1;">
+                                    <svg width="157" height="85" viewBox="0 0 157 85" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M21 10.5C21 16.299 16.299 21 10.5 21C4.70101 21 0 16.299 0 10.5C0 4.70101 4.70101 0 10.5 0C16.299 0 21 4.70101 21 10.5Z"
+                                            fill="#FF6666" />
+                                        <path
+                                            d="M21 42.5C21 48.299 16.299 53 10.5 53C4.70101 53 0 48.299 0 42.5C0 36.701 4.70101 32 10.5 32C16.299 32 21 36.701 21 42.5Z"
+                                            fill="#FF6666" />
+                                        <path
+                                            d="M21 74.5C21 80.299 16.299 85 10.5 85C4.70101 85 0 80.299 0 74.5C0 68.701 4.70101 64 10.5 64C16.299 64 21 68.701 21 74.5Z"
+                                            fill="#FF6666" />
+                                        <path
+                                            d="M55 10.5C55 16.299 50.299 21 44.5 21C38.701 21 34 16.299 34 10.5C34 4.70101 38.701 0 44.5 0C50.299 0 55 4.70101 55 10.5Z"
+                                            fill="#FF6666" />
+                                        <path
+                                            d="M55 42.5C55 48.299 50.299 53 44.5 53C38.701 53 34 48.299 34 42.5C34 36.701 38.701 32 44.5 32C50.299 32 55 36.701 55 42.5Z"
+                                            fill="#FF6666" />
+                                        <path
+                                            d="M55 74.5C55 80.299 50.299 85 44.5 85C38.701 85 34 80.299 34 74.5C34 68.701 38.701 64 44.5 64C50.299 64 55 68.701 55 74.5Z"
+                                            fill="#FF6666" />
+                                        <path
+                                            d="M89 10.5C89 16.299 84.299 21 78.5 21C72.701 21 68 16.299 68 10.5C68 4.70101 72.701 0 78.5 0C84.299 0 89 4.70101 89 10.5Z"
+                                            fill="#FF6666" />
+                                        <path
+                                            d="M89 42.5C89 48.299 84.299 53 78.5 53C72.701 53 68 48.299 68 42.5C68 36.701 72.701 32 78.5 32C84.299 32 89 36.701 89 42.5Z"
+                                            fill="#FF6666" />
+                                        <path
+                                            d="M89 74.5C89 80.299 84.299 85 78.5 85C72.701 85 68 80.299 68 74.5C68 68.701 72.701 64 78.5 64C84.299 64 89 68.701 89 74.5Z"
+                                            fill="#FF6666" />
+                                        <path
+                                            d="M123 10.5C123 16.299 118.299 21 112.5 21C106.701 21 102 16.299 102 10.5C102 4.70101 106.701 0 112.5 0C118.299 0 123 4.70101 123 10.5Z"
+                                            fill="#FF6666" />
+                                        <path
+                                            d="M123 42.5C123 48.299 118.299 53 112.5 53C106.701 53 102 48.299 102 42.5C102 36.701 106.701 32 112.5 32C118.299 32 123 36.701 123 42.5Z"
+                                            fill="#FF6666" />
+                                        <path
+                                            d="M123 74.5C123 80.299 118.299 85 112.5 85C106.701 85 102 80.299 102 74.5C102 68.701 106.701 64 112.5 64C118.299 64 123 68.701 123 74.5Z"
+                                            fill="#FF6666" />
+                                        <path
+                                            d="M157 10.5C157 16.299 152.299 21 146.5 21C140.701 21 136 16.299 136 10.5C136 4.70101 140.701 0 146.5 0C152.299 0 157 4.70101 157 10.5Z"
+                                            fill="#FF6666" />
+                                        <path
+                                            d="M157 42.5C157 48.299 152.299 53 146.5 53C140.701 53 136 48.299 136 42.5C136 36.701 140.701 32 146.5 32C152.299 32 157 36.701 157 42.5Z"
+                                            fill="#FF6666" />
+                                        <path
+                                            d="M157 74.5C157 80.299 152.299 85 146.5 85C140.701 85 136 80.299 136 74.5C136 68.701 140.701 64 146.5 64C152.299 64 157 68.701 157 74.5Z"
+                                            fill="#FF6666" />
+                                    </svg>
+                                </div>
+                                <img src="./assets/hero-img.png" class="img-fluid animate__animated animate__fadeInUp">
+                                <div class="position-absolute top-0 start-100 translate-middle" style="z-index: 10;">
+                                    <button class="input-group-text rounded-pill shadow-sm my-btn" id="visit">kunjungi
+                                        klinik
+                                        kami</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-6">
-                    <div class="h1 leading-text pt-5">
-                        ARVI MEDICAL CENTER
-                    </div>
-                    <div class="h5 fw-semibold">
-                        Pelayanan Medis Terbaik 24 Jam, Kami Siap Melayani Kesehatan Anda Kapanpun dan Dimanapun
-                    </div>
-                    <span>
-                        <div class="dot_checker"></div>
-                        &nbsp;&nbsp;Pelayanan Medis Komprehensif
-                    </span>
-                    <span>
-                        <div class="dot_checker"></div>
-                        &nbsp;&nbsp;Dokter dan Tenaga Medis Profesional
-                    </span>
-                    <span>
-                        <div class="dot_checker"></div>
-                        &nbsp;&nbsp;Teknologi Medis Terkini
-                    </span>
-                    <span>
-                        <div class="dot_checker"></div>
-                        &nbsp;&nbsp;Layanan Darurat 24 Jam
-                    </span>
-                    <span>
-                        <div class="dot_checker"></div>
-                        &nbsp;&nbsp;Fasilitas yang Nyaman dan Bersih
-                    </span>
-                    <span>
-                        <div class="dot_checker"></div>
-                        &nbsp;&nbsp;Pelayanan Konsultasi dan Edukasi
-                    </span>
-                    <span>
-                        <div class="dot_checker"></div>
-                        &nbsp;&nbsp;Dukungan dan Perhatian Pasca Perawatan
-                    </span>
+            </div>
+        </section>
+
+        <div class="container mt-5 mb-5">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/carousel-1.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/carousel-1.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/carousel-1.jpg" class="d-block w-100">
+                    </div>
+                </div>
+
             </div>
         </div>
-    </div>
 
-
-
-    <!-- review -->
-    <section class="d-flex justify-content-start align-items-center" id="testimonial-section-v3">
-        <div class="container">
-            <div class="row d-flex justify-content-start align-items-center gx-0">
-                <div class="col-lg-5 col-12">
-                    <h1 class="header-title leading-text mb-0">
-                        Pelayanan Konsultasi
-                        dan Edukasi<br class="desktop">
-                    </h1>
-                    <p class="fs-5">kami juga memberikan pelayanan konsultasi dan edukasi kepada pasien. Kami
-                        berkomitmen untuk
-                        memberikan informasi yang
-                        jelas dan mendukung pasien dalam pengambilan keputusan yang tepat terkait kesehatan mereka.
-                    </p>
-                </div>
-                <div
-                    class="col-lg-7 text-end col-12 d-none d-sm-flex justify-content-end align-items-start mt-md-5 mt-lg-0">
-                    <div class="testimonial-row d-flex justify-content-start align-items-start flex-nowrap">
-                        <div class="testimonial-column d-flex justify-content-start align-items-end flex-column">
-
-                            <div class="testimonial-card">
-                                <h2 class="testimonial-title mb-0">umay s</h2>
-                                <div class="d-flex">
-                                    <div class="rating_start"></div>
-                                    <div class="rating_start"></div>
-                                    <div class="rating_start"></div>
-                                    <div class="rating_start"></div>
-                                    <div class="rating_start"></div>
-                                </div>
-                                <p class="testimonial-description">
-                                    Observasi pemberian vitamin dan obat melalui infus, fast response, dokter detail
-                                    jelasinnya meskipun masih muda, akang
-                                    yg jaga di pelayanan juga cekatan dalam membantu.</p>
+        <div class="layanan" id="layanan">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="position-relative">
+                            <div class="p-5">
+                                <img src="assets/home.jpg" class="img-fluid img-thumb">
                             </div>
-                            <div class="testimonial-card">
-                                <h2 class="testimonial-title mb-0">umay s</h2>
-                                <div class="d-flex">
-                                    <div class="rating_start"></div>
-                                    <div class="rating_start"></div>
-                                    <div class="rating_start"></div>
-                                    <div class="rating_start"></div>
-                                    <div class="rating_start"></div>
-                                </div>
-                                <p class="testimonial-description">
-                                    Observasi pemberian vitamin dan obat melalui infus, fast response, dokter detail
-                                    jelasinnya meskipun masih muda, akang
-                                    yg jaga di pelayanan juga cekatan dalam membantu.</p>
+                            <div class="position-absolute top-0 start-0 display-logo">
+                                <img src="./assets/favicon/logo.svg" width="300" class="img-fluid">
                             </div>
-                            <div class="testimonial-card">
-                                <h2 class="testimonial-title mb-0">umay s</h2>
-                                <div class="d-flex">
-                                    <div class="rating_start"></div>
-                                    <div class="rating_start"></div>
-                                    <div class="rating_start"></div>
-                                    <div class="rating_start"></div>
-                                    <div class="rating_start"></div>
+                            <div class="position-absolute bottom-0 end-0 visibility-none">
+                                <div class="card border-0 rounded-4 shadow-sm" style="width: 40%;">
+                                    <div class="p-3" style="font-size: 14px;">
+                                        <div class="h6 leading-text">admision</div>
+                                        Kami siap melayani kebutuhan medis darurat Anda selama 24 jam sehari, 7 hari
+                                        seminggu. Ketika Anda membutuhkan bantuan
+                                        segera, kami akan memberikan perawatan dengan cepat dan tepat.
+                                    </div>
                                 </div>
-                                <p class="testimonial-description">
-                                    Observasi pemberian vitamin dan obat melalui infus, fast response, dokter detail
-                                    jelasinnya meskipun masih muda, akang
-                                    yg jaga di pelayanan juga cekatan dalam membantu.</p>
                             </div>
-
-
-                        </div>
-                        <div class="testimonial-column d-flex justify-content-start align-items-end flex-column">
-                            <div class="testimonial-card">
-                                <h2 class="testimonial-title mb-0">umay s</h2>
-                                <div class="d-flex">
-                                    <div class="rating_start"></div>
-                                    <div class="rating_start"></div>
-                                    <div class="rating_start"></div>
-                                    <div class="rating_start"></div>
-                                    <div class="rating_start"></div>
-                                </div>
-                                <p class="testimonial-description">
-                                    Observasi pemberian vitamin dan obat melalui infus, fast response, dokter detail
-                                    jelasinnya meskipun masih muda, akang
-                                    yg jaga di pelayanan juga cekatan dalam membantu.</p>
-                            </div>
-                            <div class="testimonial-card">
-                                <h2 class="testimonial-title mb-0">umay s</h2>
-                                <div class="d-flex">
-                                    <div class="rating_start"></div>
-                                    <div class="rating_start"></div>
-                                    <div class="rating_start"></div>
-                                    <div class="rating_start"></div>
-                                    <div class="rating_start"></div>
-                                </div>
-                                <p class="testimonial-description">
-                                    Observasi pemberian vitamin dan obat melalui infus, fast response, dokter detail
-                                    jelasinnya meskipun masih muda, akang
-                                    yg jaga di pelayanan juga cekatan dalam membantu.</p>
-                            </div>
-                            <div class="testimonial-card">
-                                <h2 class="testimonial-title mb-0">umay s</h2>
-                                <div class="d-flex">
-                                    <div class="rating_start"></div>
-                                    <div class="rating_start"></div>
-                                    <div class="rating_start"></div>
-                                    <div class="rating_start"></div>
-                                    <div class="rating_start"></div>
-                                </div>
-                                <p class="testimonial-description">
-                                    Observasi pemberian vitamin dan obat melalui infus, fast response, dokter detail
-                                    jelasinnya meskipun masih muda, akang
-                                    yg jaga di pelayanan juga cekatan dalam membantu.</p>
-                            </div>
-
                         </div>
                     </div>
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="h1 leading-text pt-5">
+                            ARVI MEDICAL CENTER
+                        </div>
+                        <div class="h5 fw-semibold">
+                            Pelayanan Medis Terbaik 24 Jam, Kami Siap Melayani Kesehatan Anda Kapanpun dan Dimanapun
+                        </div>
+                        <span>
+                            <div class="dot_checker"></div>
+                            &nbsp;&nbsp;Pelayanan Medis Komprehensif
+                        </span>
+                        <span>
+                            <div class="dot_checker"></div>
+                            &nbsp;&nbsp;Dokter dan Tenaga Medis Profesional
+                        </span>
+                        <span>
+                            <div class="dot_checker"></div>
+                            &nbsp;&nbsp;Teknologi Medis Terkini
+                        </span>
+                        <span>
+                            <div class="dot_checker"></div>
+                            &nbsp;&nbsp;Layanan Darurat 24 Jam
+                        </span>
+                        <span>
+                            <div class="dot_checker"></div>
+                            &nbsp;&nbsp;Fasilitas yang Nyaman dan Bersih
+                        </span>
+                        <span>
+                            <div class="dot_checker"></div>
+                            &nbsp;&nbsp;Pelayanan Konsultasi dan Edukasi
+                        </span>
+                        <span>
+                            <div class="dot_checker"></div>
+                            &nbsp;&nbsp;Dukungan dan Perhatian Pasca Perawatan
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- review -->
-    <!-- dukungan dan perhatian -->
-    <section id="roadmapCareer" class="feature-one mt-5 mb-5">
-        <div class="container">
-            <div class="mb-4">
-                <header class="front-text-group">
-                    <div class="leading-text mb-0 h2">Dukungan dan Perhatian<br class="desktop">
-                        Pasca Perawatan
-                    </div>
-                </header>
-            </div>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-5">
 
-                <div class="col position-relative stack-card-group">
-                    <div class="roadmapCard">
-                        <div class="h5 leading-text text-capitalize">admision</div>
-                        <p class="subtitle">
-                            Kami siap melayani kebutuhan medis darurat Anda selama 24 jam sehari, 7 hari seminggu.
-                            Ketika Anda membutuhkan bantuan
-                            segera, kami akan memberikan perawatan dengan cepat dan tepat.
-                        </p>
-                    </div>
-                    <div class="stack-card-ornament sco-1"></div>
-                    <div class="stack-card-ornament sco-2"></div>
+        <div id="contact">
+            <div class="text-center leading-text h1 mb-3">Ayo Periksa Kesehatan Anda di Klinik Kami, <br> Investasi
+                Terbaik
+                untuk
+                Kesejahteraan Anda</div>
+
+            <div class="position-relative">
+                <div class="position-absolute top-100 start-50 translate-middle" style="z-index: 9;">
+                    <a class="btn glowing ps-5 pe-5 pt-2 pb-2 text-uppercase" style="text-decoration:none;"
+                        href="https://www.google.com/maps/dir/?api=1&destination=ARVI+MEDICAL+CENTER+Praktek+Dokter+Umum+24+Jam/@-6.4119109,106.7797442,15z/data=!4m6!3m5!1s0x2e69e9f67f9cbb8f:0xaa8fe49a2e69a53b!8m2!3d-6.4119109!4d106.7797442!16s%2Fg%2F11sy_bx9vy?entry=ttu"
+                        target="_blank">kunjungi kami</a>
                 </div>
-                <div class="col position-relative stack-card-group">
-                    <div class="roadmapCard">
-                        <div class="h5 leading-text text-capitalize">admision</div>
-                        <p class="subtitle">
-                            Kami siap melayani kebutuhan medis darurat Anda selama 24 jam sehari, 7 hari seminggu.
-                            Ketika Anda membutuhkan bantuan
-                            segera, kami akan memberikan perawatan dengan cepat dan tepat.
-                        </p>
-                    </div>
-                    <div class="stack-card-ornament sco-1"></div>
-                    <div class="stack-card-ornament sco-2"></div>
-                </div>
-                <div class="col position-relative stack-card-group">
-                    <div class="roadmapCard">
-                        <div class="h5 leading-text text-capitalize">admision</div>
-                        <p class="subtitle">
-                            Kami siap melayani kebutuhan medis darurat Anda selama 24 jam sehari, 7 hari seminggu.
-                            Ketika Anda membutuhkan bantuan
-                            segera, kami akan memberikan perawatan dengan cepat dan tepat.
-                        </p>
-                    </div>
-                    <div class="stack-card-ornament sco-1"></div>
-                    <div class="stack-card-ornament sco-2"></div>
-                </div>
-
-
-
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.860909680752!2d106.7797442!3d-6.4119109000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e9f67f9cbb8f%3A0xaa8fe49a2e69a53b!2sARVI%20MEDICAL%20CENTER%20Praktek%20Dokter%20Umum%2024%20Jam!5e0!3m2!1sid!2sid!4v1688104303778!5m2!1sid!2sid"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-    </section>
-    <div id="footer">
-        <div class="container pt-5 pb-5">
-            <div class="row align-items-start">
-                <div class="mb-5">
-                    <img src="./assets/favicon/logo.svg" width="250" class="img-fluid">
-                </div>
-                <div class="col-sm-12 col-lg-4 mb-3">
-                    <div class="text-capitalize fs-5 fw-semibold">alamat</div>
-                    Jalan Raya Pasir Putih No.7 RT.004/RW.001 Pasir Putih
-                    Kecamatan Sawangan Kota Depok Jawa Barat 16519
-                    IndonesiaJalan Raya Pasir Putih No.7 RT.004/RW.001 Pasir Putih
-                    Kecamatan Sawangan Kota Depok Jawa Barat 16519
-                    Indonesia
-                </div>
-                <div class="col-sm-12 col-lg-4 mb-3">
-                    <div class="text-capitalize fs-5 fw-semibold">Kontak</div>
-                    <ul>
-                        <li>Teleppon : 0895-3270-74207</li>
-                        <li>Email : care@arvimedika.com</li>
-                    </ul>
-                </div>
-                <div class="col-sm-12 col-lg-4 mb-3">
-                    <div>Google Map</div>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.860909680752!2d106.7797442!3d-6.4119109000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e9f67f9cbb8f%3A0xaa8fe49a2e69a53b!2sARVI%20MEDICAL%20CENTER%20Praktek%20Dokter%20Umum%2024%20Jam!5e0!3m2!1sid!2sid!4v1688104303778!5m2!1sid!2sid"
-                        style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
 
+        <div id="gallery">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-4 col-md-3 mb-4">
+                        <a class="cwa-lightbox-image" href="./assets/home.jpg"
+                            data-desc="cwa_lightbox: jQuery Lightbox Gallery Plugin. https://www.jqueryscript.net">
+                            <img src="./assets/home.jpg" alt="" loading="lazy" class="img-fluid" />
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-md-3 mb-4">
+                        <a class="cwa-lightbox-image" href="./assets/service.png"
+                            data-desc="cwa_lightbox: jQuery Lightbox Gallery Plugin. https://www.jqueryscript.net">
+                            <img src="./assets/service.png" alt="" loading="lazy" class="img-fluid" />
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-md-3 mb-4">
+                        <a class="cwa-lightbox-image" href="./assets/home.jpg"
+                            data-desc="cwa_lightbox: jQuery Lightbox Gallery Plugin. https://www.jqueryscript.net">
+                            <img src="./assets/home.jpg" alt="" loading="lazy" class="img-fluid" />
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-md-3 mb-4">
+                        <a class="cwa-lightbox-image" href="./assets/service.png"
+                            data-desc="cwa_lightbox: jQuery Lightbox Gallery Plugin. https://www.jqueryscript.net">
+                            <img src="./assets/service.png" alt="" loading="lazy" class="img-fluid" />
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-md-3 mb-4">
+                        <a class="cwa-lightbox-image" href="./assets/home.jpg"
+                            data-desc="cwa_lightbox: jQuery Lightbox Gallery Plugin. https://www.jqueryscript.net">
+                            <img src="./assets/home.jpg" alt="" loading="lazy" class="img-fluid" />
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-md-3 mb-4">
+                        <a class="cwa-lightbox-image" href="./assets/home.jpg"
+                            data-desc="cwa_lightbox: jQuery Lightbox Gallery Plugin. https://www.jqueryscript.net">
+                            <img src="./assets/home.jpg" alt="" loading="lazy" class="img-fluid" />
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- review -->
+        <section class="d-flex justify-content-start align-items-center" id="testimonial-section-v3">
+            <div class="container">
+                <div class="row d-flex justify-content-start align-items-center gx-0">
+                    <div class="col-lg-5 col-12">
+                        <h1 class="header-title leading-text mb-0">
+                            Pelayanan Konsultasi
+                            dan Edukasi<br class="desktop">
+                        </h1>
+                        <p class="fs-5">kami juga memberikan pelayanan konsultasi dan edukasi kepada pasien. Kami
+                            berkomitmen untuk
+                            memberikan informasi yang
+                            jelas dan mendukung pasien dalam pengambilan keputusan yang tepat terkait kesehatan mereka.
+                        </p>
+                    </div>
+                    <div
+                        class="col-lg-7 text-end col-12 d-none d-sm-flex justify-content-end align-items-start mt-md-5 mt-lg-0">
+                        <div class="testimonial-row d-flex justify-content-start align-items-start flex-nowrap">
+                            <div class="testimonial-column d-flex justify-content-start align-items-end flex-column">
+                                <div class="testimonial-card">
+                                    <h2 class="testimonial-title mb-0">umay s</h2>
+                                    <div class="d-flex">
+                                        <div class="rating_start"></div>
+                                        <div class="rating_start"></div>
+                                        <div class="rating_start"></div>
+                                        <div class="rating_start"></div>
+                                        <div class="rating_start"></div>
+                                    </div>
+                                    <p class="testimonial-description">
+                                        Observasi pemberian vitamin dan obat melalui infus, fast response, dokter detail
+                                        jelasinnya meskipun masih muda, akang
+                                        yg jaga di pelayanan juga cekatan dalam membantu.</p>
+                                </div>
+                                <div class="testimonial-card">
+                                    <h2 class="testimonial-title mb-0">umay s</h2>
+                                    <div class="d-flex">
+                                        <div class="rating_start"></div>
+                                        <div class="rating_start"></div>
+                                        <div class="rating_start"></div>
+                                        <div class="rating_start"></div>
+                                        <div class="rating_start"></div>
+                                    </div>
+                                    <p class="testimonial-description">
+                                        Observasi pemberian vitamin dan obat melalui infus, fast response, dokter detail
+                                        jelasinnya meskipun masih muda, akang
+                                        yg jaga di pelayanan juga cekatan dalam membantu.</p>
+                                </div>
+                                <div class="testimonial-card">
+                                    <h2 class="testimonial-title mb-0">umay s</h2>
+                                    <div class="d-flex">
+                                        <div class="rating_start"></div>
+                                        <div class="rating_start"></div>
+                                        <div class="rating_start"></div>
+                                        <div class="rating_start"></div>
+                                        <div class="rating_start"></div>
+                                    </div>
+                                    <p class="testimonial-description">
+                                        Observasi pemberian vitamin dan obat melalui infus, fast response, dokter detail
+                                        jelasinnya meskipun masih muda, akang
+                                        yg jaga di pelayanan juga cekatan dalam membantu.</p>
+                                </div>
+
+                            </div>
+                            <div class="testimonial-column d-flex justify-content-start align-items-end flex-column">
+                                <div class="testimonial-card">
+                                    <h2 class="testimonial-title mb-0">umay s</h2>
+                                    <div class="d-flex">
+                                        <div class="rating_start"></div>
+                                        <div class="rating_start"></div>
+                                        <div class="rating_start"></div>
+                                        <div class="rating_start"></div>
+                                        <div class="rating_start"></div>
+                                    </div>
+                                    <p class="testimonial-description">
+                                        Observasi pemberian vitamin dan obat melalui infus, fast response, dokter detail
+                                        jelasinnya meskipun masih muda, akang
+                                        yg jaga di pelayanan juga cekatan dalam membantu.</p>
+                                </div>
+                                <div class="testimonial-card">
+                                    <h2 class="testimonial-title mb-0">umay s</h2>
+                                    <div class="d-flex">
+                                        <div class="rating_start"></div>
+                                        <div class="rating_start"></div>
+                                        <div class="rating_start"></div>
+                                        <div class="rating_start"></div>
+                                        <div class="rating_start"></div>
+                                    </div>
+                                    <p class="testimonial-description">
+                                        Observasi pemberian vitamin dan obat melalui infus, fast response, dokter detail
+                                        jelasinnya meskipun masih muda, akang
+                                        yg jaga di pelayanan juga cekatan dalam membantu.</p>
+                                </div>
+                                <div class="testimonial-card">
+                                    <h2 class="testimonial-title mb-0">umay s</h2>
+                                    <div class="d-flex">
+                                        <div class="rating_start"></div>
+                                        <div class="rating_start"></div>
+                                        <div class="rating_start"></div>
+                                        <div class="rating_start"></div>
+                                        <div class="rating_start"></div>
+                                    </div>
+                                    <p class="testimonial-description">
+                                        Observasi pemberian vitamin dan obat melalui infus, fast response, dokter detail
+                                        jelasinnya meskipun masih muda, akang
+                                        yg jaga di pelayanan juga cekatan dalam membantu.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- review -->
+        <!-- dukungan dan perhatian -->
+        <section id="roadmapCareer" class="feature-one mt-5 mb-5">
+            <div class="container">
+                <div class="mb-4">
+                    <header class="front-text-group">
+                        <div class="leading-text mb-0 h2">Dukungan dan Perhatian<br class="desktop">
+                            Pasca Perawatan
+                        </div>
+                    </header>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-5">
+
+                    <div class="col position-relative stack-card-group">
+                        <div class="roadmapCard">
+                            <div class="h5 leading-text text-capitalize">admision</div>
+                            <p class="subtitle">
+                                Kami siap melayani kebutuhan medis darurat Anda selama 24 jam sehari, 7 hari seminggu.
+                                Ketika Anda membutuhkan bantuan
+                                segera, kami akan memberikan perawatan dengan cepat dan tepat.
+                            </p>
+                        </div>
+                        <div class="stack-card-ornament sco-1"></div>
+                        <div class="stack-card-ornament sco-2"></div>
+                    </div>
+                    <div class="col position-relative stack-card-group">
+                        <div class="roadmapCard">
+                            <div class="h5 leading-text text-capitalize">admision</div>
+                            <p class="subtitle">
+                                Kami siap melayani kebutuhan medis darurat Anda selama 24 jam sehari, 7 hari seminggu.
+                                Ketika Anda membutuhkan bantuan
+                                segera, kami akan memberikan perawatan dengan cepat dan tepat.
+                            </p>
+                        </div>
+                        <div class="stack-card-ornament sco-1"></div>
+                        <div class="stack-card-ornament sco-2"></div>
+                    </div>
+                    <div class="col position-relative stack-card-group">
+                        <div class="roadmapCard">
+                            <div class="h5 leading-text text-capitalize">admision</div>
+                            <p class="subtitle">
+                                Kami siap melayani kebutuhan medis darurat Anda selama 24 jam sehari, 7 hari seminggu.
+                                Ketika Anda membutuhkan bantuan
+                                segera, kami akan memberikan perawatan dengan cepat dan tepat.
+                            </p>
+                        </div>
+                        <div class="stack-card-ornament sco-1"></div>
+                        <div class="stack-card-ornament sco-2"></div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+        <div id="footer">
+            <div class="container pt-5 pb-5">
+                <div class="row align-items-start">
+                    <div class="mb-5">
+                        <img src="./assets/favicon/logo.svg" width="250" class="img-fluid">
+                    </div>
+                    <div class="col-sm-12 col-lg-4 mb-3">
+                        <div class="text-capitalize fs-5 fw-semibold">alamat</div>
+                        Jalan Raya Pasir Putih No.7 RT.004/RW.001 Pasir Putih
+                        Kecamatan Sawangan Kota Depok Jawa Barat 16519
+                        IndonesiaJalan Raya Pasir Putih No.7 RT.004/RW.001 Pasir Putih
+                        Kecamatan Sawangan Kota Depok Jawa Barat 16519
+                        Indonesia
+                    </div>
+                    <div class="col-sm-12 col-lg-4 mb-3">
+                        <div class="text-capitalize fs-5 fw-semibold">Kontak</div>
+                        <ul>
+                            <li>Teleppon : 0895-3270-74207</li>
+                            <li>Email : care@arvimedika.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-lg-4 mb-3">
+                        <div>Google Map</div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.860909680752!2d106.7797442!3d-6.4119109000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e9f67f9cbb8f%3A0xaa8fe49a2e69a53b!2sARVI%20MEDICAL%20CENTER%20Praktek%20Dokter%20Umum%2024%20Jam!5e0!3m2!1sid!2sid!4v1688104303778!5m2!1sid!2sid"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </div>
     <!-- SCRIPT -->
     <!-- <script src="./bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./cwa_lightbox_bundle_v1.js"></script>
     <script>
         var body = document.body;
         var elements = document.getElementsByClassName("navbar");

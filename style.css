@@ -89,9 +89,19 @@ iframe {
     font-weight: 800;
 }
 
+#layanan,
+#contact {
+    margin: 100px 0;
+}
 
 .layanan .img-thumb {
     border-radius: 40px;
+}
+
+
+
+#contact iframe {
+    height: 70vh;
 }
 
 
@@ -528,8 +538,52 @@ section#roadmapCareer .roadmapCard .subtitle {
         padding-right: 16px
     }
 
+    .display-logo img {
+        width: 50% !important;
+        padding-top: 40px;
+    }
+
     /* #hero {
         background-size: 200px auto;
         background-repeat: repeat;
     } */
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.my-btn {
+    animation: move 2s infinite;
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.7);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.9);
+    }
+
+    100% {
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.7);
+    }
+}
+
+/* Apply the animation to an element */
+.glowing {
+    animation: glowing 2s infinite;
+    background-color: red;
+    color: white;
 }
